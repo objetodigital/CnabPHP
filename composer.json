@@ -15,7 +15,7 @@
         }
     ],
     "require-dev": {
-        
+        "objetodigital/cnab_yaml": "master@dev"
     },
     "require": {
         "objetodigital/cnab_yaml": "master@dev"
