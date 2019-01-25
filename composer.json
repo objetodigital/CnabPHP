@@ -15,10 +15,10 @@
         }
     ],
     "require-dev": {
-        "objetodigital/cnab_yaml": "master@dev"
+        "objetodigital/cnab_yaml": "dev-master"
     },
     "require": {
-        "objetodigital/cnab_yaml": "master@dev"
+        "objetodigital/cnab_yaml": "dev-master"
     },
     "autoload": {
         "psr-4": {
