@@ -14,11 +14,9 @@
             "email": "hmarinjr@gmail.com"
         }
     ],
-    "require-dev": {
-        "objetodigital/cnab_yaml": "dev-master"
-    },
     "require": {
-        "objetodigital/cnab_yaml": "dev-master"
+        "objetodigital/cnab_yaml": "dev-master",
+        "mustangostang/spyc": "0.5.*"
     },
     "autoload": {
         "psr-4": {
