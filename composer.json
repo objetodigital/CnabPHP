@@ -15,7 +15,6 @@
         }
     ],
     "require": {
-        "objetodigital/cnab_yaml": "dev-master",
         "mustangostang/spyc": "0.5.*"
     },
     "autoload": {
