@@ -288,6 +288,9 @@ class Arquivo implements \Cnab\Remessa\IArquivo
                     $detalhe->segmento_p->codigo_baixa = 1;
                     $detalhe->segmento_p->prazo_baixa = $boleto['baixar_apos_dias'];
                 }
+            } elseif ($this->codigo_banco == \Cnab\Banco::CEF) {
+                $detalhe->segmento_p->codigo_baixa = 1;
+                $detalhe->segmento_p->prazo_baixa = 0;
             } else {
                 $detalhe->segmento_p->codigo_baixa = 0;
                 $detalhe->segmento_p->prazo_baixa = 0;
