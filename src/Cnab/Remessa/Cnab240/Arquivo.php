@@ -36,6 +36,8 @@ class Arquivo implements \Cnab\Remessa\IArquivo
 
         if ($this->codigo_banco == \Cnab\Banco::CEF) {
             $campos[] = 'codigo_cedente';
+            $campos[] = 'versao_layout_arquivo';
+            $campos[] = 'uso_reservado_empresa';
         }
 
         if($this->codigo_banco == \Cnab\Banco::BANCO_DO_BRASIL) {
@@ -96,6 +98,12 @@ class Arquivo implements \Cnab\Remessa\IArquivo
 
         if($this->codigo_banco == \Cnab\Banco::CEF) {
             $this->headerArquivo->codigo_cedente = $this->configuracao['codigo_cedente'];
+            $this->headerArquivo->versao_layout_arquivo = !empty($this->configuracao['versao_layout_arquivo'])
+                ? $this->configuracao['versao_layout_arquivo']
+                : "101";
+            $this->headerArquivo->uso_reservado_empresa = !empty($this->configuracao['uso_reservado_empresa'])
+                ? $this->configuracao['uso_reservado_empresa']
+                : "REMESSA-PRODUCAO";
         }
 
         $this->headerArquivo->nome_empresa = $this->configuracao['nome_fantasia'];
